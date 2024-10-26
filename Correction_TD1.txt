@@ -1,0 +1,64 @@
+Exercice 1 : 
+
+    Répondons aux questions suivantes : 
+
+1) Expliquons ce qu'est un un algorithme :
+--> Un algorithme est une suite d’actions ordonnées en séquence qui portent sur des objets. Ces objets doivent
+être définis de manière très précise.
+
+2) Donnons la différence entre l'algorithmique et la programmation :
+--> L'algorithme est rédigé en langage commun (que l'homme peut comprendre). Les algorithmes sont traduits en langage 
+de programmation de manière à ce qu'ils soient exécutables ou réalisables par un ordinateur. Un programme désigne 
+l'ensemble des instructions et des données qui représentent un algorithme. Un programme c’est le codage d’un algorithme dans un
+langage de programmation, et qui peut être traité par une machine donnée.
+
+3) Quels sont les deux conventions de représentations des algorithmes ?
+--> Les deux conventions de représentations des algorithmes sont :
+- représenté graphiquement, c'est alors un algorigramme ou organigramme ; 
+- écrit sous une forme littérale, c'est le langage algorithmique ou pseudo-code.
+
+4) Quelle est la convention la plus répandue et pour quelle raison ?
+--> Le pseudo-code est le plus répandu, car il est plus simple, lisible, et proche des langages de programmation.
+
+5) Quelles sont les trois grandes questions à se poser lors de la conception d'un algorithme?
+--> Les trois questions à se poser lors de la conception d'un algorithme sont les suivantes : 
+
+a) Quel est l'objectif de l'algorithme ?
+Comprendre l’énoncé du problème, identifier les données d’entrée et le résultat attendu.
+
+b) Comment décomposer le problème ?
+Diviser le problème en sous-problèmes pour rendre la résolution plus simple et chaque étape plus gérable.
+
+c) Comment structurer les opérations et les choix ?
+Élaborer une séquence d’actions claires (conditions, boucles, et alternatives) pour atteindre le résultat avec le bon enchaînement d’opérations.
+
+
+
+Exercice 2 : 
+
+Disons si les instructions sont correctes ou non :
+
+1) a1 ← 3 - Correct  
+   L'instruction est valide et signifie que la variable a1 reçoit la valeur 3;
+
+2) b ← 3 * 5 - Correct  
+   L'instruction est correcte et signifie que la variable b reçoit le résultat de 3 multiplié par 5;
+
+3) c ← a1 - Correct
+   L'instruction est correcte et signifie que la variable c reçoit la valeur de a1;
+
+4) a + 1 ← b + 1 - Incorrect  
+   L'instruction est incorrecte car on ne peut pas affecter une valeur à une expression (a + 1). On peut seulement affecter une valeur à une variable.
+   Une correction pourrait être a ← b + 1 si on souhaite que a reçoive b + 1;
+
+5) c ← (b + 5) * 4 - Correct
+   L'instruction est correcte et signifie que c reçoit le résultat de (b + 5) * 4;
+
+6) b ← b + c - Correct
+   L'instruction est correcte et signifie que b reçoit le résultat de l'addition de b et c;
+
+7) a ← b x c - Incorrect
+   L'instruction est incorrecte car le symbole "x" n’est pas conventionnel pour la multiplication dans la plupart des langages de programmation (on utilise généralement "*"). La correction serait a ← b * c;
+
+8) a ← 3c - Incorrect
+   L'instruction est incorrecte car 3c n’est pas une notation correcte pour représenter la multiplication de 3 et c. La correction serait a ← 3 * c.
