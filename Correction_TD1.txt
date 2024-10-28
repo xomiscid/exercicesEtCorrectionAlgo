@@ -62,3 +62,32 @@ Disons si les instructions sont correctes ou non :
 
 8) a ← 3c - Incorrect
    L'instruction est incorrecte car 3c n’est pas une notation correcte pour représenter la multiplication de 3 et c. La correction serait a ← 3 * c.
+
+Exercice 3 :
+
+Donnons le contenu des variables x, y et z après l'exécution de chacunes des instructions :
+
+1) x <--5 : le contenu est 5
+   y <-- 6 : le contenu est 6
+   z <-- x + y : le contenu est 11
+   z <--z*y : le contenu est 66
+
+2) x <-- 2^4 : le contenu est 16
+   y <-- x/2 : le contenu est 8
+   z = x*y : le contenu est 128
+   x = y/2 : le contenu est 4
+
+Execrcie 4 :
+
+L'algorithme produira en sortie le résultat suivant : 42312
+
+Exercice 5 : 
+
+L'algorithme produira en sortie le résultat suivant : 42312
+
+Exercice 6 :
+
+1) Pas équivalentes
+2) Pas équivalentes
+3) Pas équivalentes
+4) Pas équivalentes
