@@ -100,4 +100,4 @@ a --> 2
 b --> 1
 c --> 3
 
-Pour que le résultat de la division entre b et a (variable c) soit plus précis l'on doit déclarer des réels.
+Pour que le résultat de la division entre b et a (variable c) soit plus précis l'on doit déclarer des réels à la place des entiers.
