@@ -91,3 +91,13 @@ Exercice 6 :
 2) Pas équivalentes
 3) Pas équivalentes
 4) Pas équivalentes
+
+Exercice 7 :
+
+Après l’exécution des instructions les valeurs des variables a, b et c seront :
+
+a --> 2
+b --> 1
+c --> 3
+
+Pour que le résultat de la division entre b et a (variable c) soit plus précis l'on doit déclarer des réels.
