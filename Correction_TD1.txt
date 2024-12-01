@@ -123,7 +123,7 @@ c = 3.
 2. Proposition pour un résultat plus précis :
 Pour que le résultat de la division entre b et a (variable c) soit plus précis, il faut utiliser des variables de type réel au lieu d’entiers. Cela permettrait d’avoir une division flottante au lieu d’une division entière.
 
-Voici l’ajustement :
+Ajustement :
 variable a, b, c : réel
 Début
   a ← 3
@@ -236,12 +236,9 @@ Début
   b ← a
 Fin
 
-Étape 1 : 
-a=3,b=10
-Étape 2 : 
-a←b, donc a=10
-Étape 3 : 
-b←a, donc b=10
+Étape 1 : a=3,b=10
+Étape 2 : a←b, donc a=10
+Étape 3 : b←a, donc b=10
 Résultat : a=10,b=10
 
 2. Échange des valeurs avec les instructions actuelles ?
@@ -293,18 +290,28 @@ Volume : 6×4×2.5=60 m³
 Nombre de radiateurs : 60÷8=7.5
 Résultat : 8 radiateurs (en arrondissant au supérieur).
 
+Exercice 14 : Calcul du prix TTC
 
+Algorithme :
+Variables prixHT, nombreArticles, tauxTVA, prixTTC : réel
+Début
+  Écrire "Entrez le prix HT d'un article :"
+  Lire prixHT
+  Écrire "Entrez le nombre d'articles :"
+  Lire nombreArticles
+  Écrire "Entrez le taux de TVA (en %) :"
+  Lire tauxTVA
+  prixTTC ← nombreArticles * prixHT * (1 + tauxTVA / 100)
+  Écrire "Le prix total TTC est :", prixTTC
+Fin
 
+Exercice 15 : Fonction f(x)
 
-
-
-
-
-
-
-
-
-
-
-
-
+Algorithme :
+Variables x, f : réel
+Début
+  Écrire "Entrez une valeur pour x :"
+  Lire x
+  f ← x * x - 8 * x + 7
+  Écrire "La valeur de f(x) est :", f
+Fin
