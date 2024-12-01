@@ -32,8 +32,6 @@ Diviser le problème en sous-problèmes pour rendre la résolution plus simple e
 c) Comment structurer les opérations et les choix ?
 Élaborer une séquence d’actions claires (conditions, boucles, et alternatives) pour atteindre le résultat avec le bon enchaînement d’opérations.
 
-
-
 Exercice 2 : 
 
 Disons si les instructions sont correctes ou non :
@@ -94,10 +92,219 @@ Exercice 6 :
 
 Exercice 7 :
 
-Après l’exécution des instructions les valeurs des variables a, b et c seront :
+Après avoir analysé les consignes et calculs demandés, voici la solution pour chaque partie de cet exercice :
 
-a --> 2
-b --> 1
-c --> 3
+1. Valeurs des variables a, b, et c après l’exécution des instructions :
+L'algorithme est :
+Variable a, b, c : entier
 
-Pour que le résultat de la division entre b et a (variable c) soit plus précis l'on doit déclarer des réels à la place des entiers.
+Début
+  a ← 3
+  b ← 10
+  c ← b / a
+  b ← b % a
+  a ← c – b
+Fin
+
+Étape par étape :
+Initialisation :
+a = 3, b = 10, c n’est pas encore affecté.
+Instruction c ← b / a :
+Résultat de la division entière : c = 10 / 3 = 3.
+Instruction b ← b % a :
+Résultat du modulo : b = 10 % 3 = 1.
+Instruction a ← c – b :
+Résultat : a = 3 - 1 = 2.
+Valeurs finales :
+a = 2,
+b = 1,
+c = 3.
+
+2. Proposition pour un résultat plus précis :
+Pour que le résultat de la division entre b et a (variable c) soit plus précis, il faut utiliser des variables de type réel au lieu d’entiers. Cela permettrait d’avoir une division flottante au lieu d’une division entière.
+
+Voici l’ajustement :
+variable a, b, c : réel
+Début
+  a ← 3
+  b ← 10
+  c ← b / a   # Résultat : 10 / 3 = 3.333...
+  b ← b % a   # Le modulo reste valable pour des réels si pris en compte correctement.
+  a ← c – b
+Fin
+
+Avec cette modification, c pourra contenir une valeur avec décimales, par exemple 3.333 au lieu de 3.
+
+Exercice 8 : Expressions
+Donnons la valeur des expressions suivantes :
+
+2 + 3 × 4
+Application de la priorité des opérateurs :
+3×4=12, donc 2+12=14
+Résultat : 14
+
+37 mod 6
+Le modulo donne le reste de la division entière :
+37÷6=6 reste 1
+Résultat : 1
+
+8 / 2 + 1
+Division en premier : 
+8÷2=4 puis addition : 4+1=5
+Résultat : 5
+
+12 mod 3
+12÷3=4 reste 0
+Résultat : 0
+
+8 / (2 + 1)
+Parenthèses d'abord : 
+2+1=3, puis 
+8÷3=2.666... (réel).
+Résultat : 2.666...
+
+12 = 10
+L’égalité est fausse.
+Résultat : Faux
+
+12 mod 5
+12÷5=2 reste 2
+Résultat : 2
+
+15 > 8
+L’inégalité est vraie.
+Résultat : Vrai
+
+Exercice 9 : Figures
+
+1. Calcul du périmètre et de l’aire d’un rectangle
+Algorithme :
+Variables longueur, largeur, périmètre, aire : réel
+Début
+  Écrire "Entrez la longueur du rectangle :"
+  Lire longueur
+  Écrire "Entrez la largeur du rectangle :"
+  Lire largeur
+  périmètre ← 2 * (longueur + largeur)
+  aire ← longueur * largeur
+  Écrire "Le périmètre est :", périmètre
+  Écrire "L'aire est :", aire
+Fin
+
+2. Affichage du carré d’un entier donné
+Algorithme :
+Variables nombre, carré : entier
+Début
+  Écrire "Entrez un entier :"
+  Lire nombre
+  carré ← nombre * nombre
+  Écrire "Le carré de", nombre, "est :", carré
+Fin
+
+3. Somme des carrés de deux nombres
+Algorithme :
+Variables a, b, sommeCarrés : réel
+Début
+  Écrire "Entrez le premier nombre :"
+  Lire a
+  Écrire "Entrez le second nombre :"
+  Lire b
+  sommeCarrés ← a * a + b * b
+  Écrire "La somme des carrés est :", sommeCarrés
+Fin
+
+4. Moyenne de deux nombres
+Algorithme :
+Variables a, b, moyenne : réel
+Début
+  Écrire "Entrez le premier nombre :"
+  Lire a
+  Écrire "Entrez le second nombre :"
+  Lire b
+  moyenne ← (a + b) / 2
+  Écrire "La moyenne est :", moyenne
+Fin
+
+Exercice 10 : Permutation
+1. Valeurs après l’exécution des instructions :
+Algorithme Exercice
+variable a, b : entier
+Début
+  a ← 3
+  b ← 10
+  a ← b
+  b ← a
+Fin
+
+Étape 1 : 
+a=3,b=10
+Étape 2 : 
+a←b, donc a=10
+Étape 3 : 
+b←a, donc b=10
+Résultat : a=10,b=10
+
+2. Échange des valeurs avec les instructions actuelles ?
+Non, les instructions actuelles ne permettent pas d’échanger les valeurs, car la nouvelle valeur de b dépend de la nouvelle valeur de a, et elles deviennent identiques.
+
+3. Effet d’inverser les deux dernières instructions :
+Si on inverse les instructions :
+a ← b
+b ← a
+L’effet reste identique : a et b auront la même valeur.
+
+Exercice 11 : Permutation de deux variables
+Algorithme :
+Variables a, b, temp : entier
+Début
+  temp ← a
+  a ← b
+  b ← temp
+Fin
+
+Exercice 12 : Permutation de trois variables
+Algorithme :
+Variables a, b, c, temp : entier
+Début
+  temp ← a
+  a ← c
+  c ← b
+  b ← temp
+Fin
+
+Exercice 13 : Nombre de radiateurs
+1. Calcul du nombre de radiateurs
+Algorithme :
+Variables longueur, largeur, hauteur, volume, nombreRadiateurs : réel
+Début
+  Écrire "Entrez la longueur de la pièce :"
+  Lire longueur
+  Écrire "Entrez la largeur de la pièce :"
+  Lire largeur
+  Écrire "Entrez la hauteur de la pièce :"
+  Lire hauteur
+  volume ← longueur * largeur * hauteur
+  nombreRadiateurs ← volume / 8
+  Écrire "Le nombre de radiateurs nécessaires est :", nombreRadiateurs
+Fin
+
+2. Exemple avec dimensions 6 × 4 × 2.5 m :
+Volume : 6×4×2.5=60 m³
+Nombre de radiateurs : 60÷8=7.5
+Résultat : 8 radiateurs (en arrondissant au supérieur).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
